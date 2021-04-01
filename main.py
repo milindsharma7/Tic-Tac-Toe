@@ -11,19 +11,21 @@ def button_click(b):
     global count
     if b["text"]==" " and flag==True:
         b["text"]="X"
+        player_win()
         flag=False
         count=count+1
     elif b["text"]==" " and flag==False:
         b["text"]="O"
         flag=True
         count=count+1
-        print(count)
-
-
-
-    
-
-
+def player_win():
+    global flag2
+    if button1["text"]=="X" and button2["text"]=="X" and button3["text"]=="X":
+        button1.config(bg="indian red")
+        button2.config(bg="indian red")
+        button3.config(bg="indian red")
+        messagebox.showinfo("First Player won the game")
+                
 button1= Button(root,text=" ",font=("Helvetica",25),height =2,width=5,bg="Light Blue",command=lambda:button_click(button1))
 button2= Button(root,text=" ",font=("Helvetica",25),height =2,width=5,bg="Light Blue",command=lambda:button_click(button2))
 button3= Button(root,text=" ",font=("Helvetica",25),height =2,width=5,bg="Light Blue",command=lambda:button_click(button3))
