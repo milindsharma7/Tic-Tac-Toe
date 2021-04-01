@@ -14,13 +14,16 @@ def button_click(b):
         flag=False
         count=count+1
         if count==9:
+            disable()
             messagebox.showinfo(title="Tic-Tac-Toe",message="This game is a draw")
+            
     elif b["text"]==" " and flag==False:
         b["text"]="O"
         flag=True
         player_win()
         count=count+1
         if count==9:
+            disable()
             messagebox.showinfo(title="Tic-Tac-Toe",message="This game is a draw")
 
 def disable():

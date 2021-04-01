@@ -1,22 +1,22 @@
 from tkinter import *
-import check
+import game
 
 root =Tk()
 root.title('Tic-Tac-Toe')
 
 
 
-button1= Button(root,text=" ",font=("Helvetica",25),height =2,width=5,bg="Light Blue",command=lambda:check.button_click(button1))
-button2= Button(root,text=" ",font=("Helvetica",25),height =2,width=5,bg="Light Blue",command=lambda:check.button_click(button2))
-button3= Button(root,text=" ",font=("Helvetica",25),height =2,width=5,bg="Light Blue",command=lambda:check.button_click(button3))
+button1= Button(root,text=" ",font=("Helvetica",25),height =2,width=5,bg="Light Blue",command=lambda:game.button_click(button1))
+button2= Button(root,text=" ",font=("Helvetica",25),height =2,width=5,bg="Light Blue",command=lambda:game.button_click(button2))
+button3= Button(root,text=" ",font=("Helvetica",25),height =2,width=5,bg="Light Blue",command=lambda:game.button_click(button3))
 
-button4= Button(root,text=" ",font=("Helvetica",25),height =2,width=5,bg="Light Blue",command=lambda:check.button_click(button4))
-button5= Button(root,text=" ",font=("Helvetica",25),height =2,width=5,bg="Light Blue",command=lambda:check.button_click(button5))
-button6= Button(root,text=" ",font=("Helvetica",25),height =2,width=5,bg="Light Blue",command=lambda:check.button_click(button6))
+button4= Button(root,text=" ",font=("Helvetica",25),height =2,width=5,bg="Light Blue",command=lambda:game.button_click(button4))
+button5= Button(root,text=" ",font=("Helvetica",25),height =2,width=5,bg="Light Blue",command=lambda:game.button_click(button5))
+button6= Button(root,text=" ",font=("Helvetica",25),height =2,width=5,bg="Light Blue",command=lambda:game.button_click(button6))
 
-button7= Button(root,text=" ",font=("Helvetica",25),height =2,width=5,bg="Light Blue",command=lambda:check.button_click(button7))
-button8= Button(root,text=" ",font=("Helvetica",25),height =2,width=5,bg="Light Blue",command=lambda:check.button_click(button8))
-button9= Button(root,text=" ",font=("Helvetica",25),height =2,width=5,bg="Light Blue",command=lambda:check.button_click(button9))
+button7= Button(root,text=" ",font=("Helvetica",25),height =2,width=5,bg="Light Blue",command=lambda:game.button_click(button7))
+button8= Button(root,text=" ",font=("Helvetica",25),height =2,width=5,bg="Light Blue",command=lambda:game.button_click(button8))
+button9= Button(root,text=" ",font=("Helvetica",25),height =2,width=5,bg="Light Blue",command=lambda:game.button_click(button9))
 
 button1.grid(row=0,column=0)
 button2.grid(row=0,column=1)
@@ -29,5 +29,4 @@ button6.grid(row=1,column=2)
 button7.grid(row=2,column=0)
 button8.grid(row=2,column=1)
 button9.grid(row=2,column=2)
-
 root.mainloop()
