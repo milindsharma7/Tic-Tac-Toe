@@ -2,6 +2,8 @@ from tkinter import *
 from tkinter import messagebox
 
 root =Tk()
+clicked=True
+count=0
 def button_click(b):
     pass
 
