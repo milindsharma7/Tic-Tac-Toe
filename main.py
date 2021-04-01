@@ -2,10 +2,27 @@ from tkinter import *
 from tkinter import messagebox
 
 root =Tk()
-clicked=True
+root.title('Tic-Tac-Toe')
+flag=True
 count=0
+
 def button_click(b):
-    pass
+    global flag 
+    global count
+    if b["text"]==" " and flag==True:
+        b["text"]="X"
+        flag=False
+        count=count+1
+    elif b["text"]==" " and flag==False:
+        b["text"]="O"
+        flag=True
+        count=count+1
+        print(count)
+
+
+
+    
+
 
 button1= Button(root,text=" ",font=("Helvetica",25),height =2,width=5,bg="Light Blue",command=lambda:button_click(button1))
 button2= Button(root,text=" ",font=("Helvetica",25),height =2,width=5,bg="Light Blue",command=lambda:button_click(button2))
